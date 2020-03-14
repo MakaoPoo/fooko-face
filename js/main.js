@@ -12,7 +12,7 @@ $(async function() {
   });
 
   app.stop();
-  app.loader.add('fooko', 'resource/fooko.json')
+  app.loader.add('fooko', '/resource/fooko.json')
   .load(onAssetsLoaded);
 
   // Webカメラ初期化
@@ -85,34 +85,36 @@ const onPlay = () => {
         mouthVecRate = 0.5;
       }
 
-      const mouthBone = fooko.skeleton.findBone("mouth");
-      let scaleY = ((120/32) * (mouthHLength / faceHLength))**2.5;
-      if(scaleY > 2) {
-        scaleY = 2;
-      }
-      histData.addHist("mouthScaleY", scaleY, 5);
-      mouthBone.scaleY = histData.getHistAve("mouthScaleY");
-      if(mouthVLength < 3) {
-        fooko.skeleton.setAttachment("mouth", "mouth-close");
-        mouthBone.scaleX = 1;
-      } else {
-        fooko.skeleton.setAttachment("mouth", "mouth-open");
-        let scaleX = (mouthVLength-3) / 11;
-        if(scaleX > 2) {
-          scaleX = 2;
+      if(fooko) {
+        const mouthBone = fooko.skeleton.findBone("mouth");
+        let scaleY = ((120/32) * (mouthHLength / faceHLength))**2.5;
+        if(scaleY > 2) {
+          scaleY = 2;
         }
-        histData.addHist("mouthscaleX", scaleX, 5);
-        mouthBone.scaleX = histData.getHistAve("mouthscaleX");
+        histData.addHist("mouthScaleY", scaleY, 5);
+        mouthBone.scaleY = histData.getHistAve("mouthScaleY");
+        if(mouthVLength < 3) {
+          fooko.skeleton.setAttachment("mouth", "mouth-close");
+          mouthBone.scaleX = 1;
+        } else {
+          fooko.skeleton.setAttachment("mouth", "mouth-open");
+          let scaleX = (mouthVLength-3) / 11;
+          if(scaleX > 2) {
+            scaleX = 2;
+          }
+          histData.addHist("mouthscaleX", scaleX, 5);
+          mouthBone.scaleX = histData.getHistAve("mouthscaleX");
+        }
+
+        const faceRot = getVecRot(outlinePos[0], outlinePos[16]);
+        const faceBone = fooko.skeleton.findBone("face");
+        let deg = getDeg(faceRot);
+        if(deg > 20) { deg = 20; }
+        if(deg < -20) { deg = -20; }
+
+        histData.addHist("faceDeg", deg, 15);
+        faceBone.rotation = histData.getHistAve("faceDeg");
       }
-
-      const faceRot = getVecRot(outlinePos[0], outlinePos[16]);
-      const faceBone = fooko.skeleton.findBone("face");
-      let deg = getDeg(faceRot);
-      if(deg > 20) { deg = 20; }
-      if(deg < -20) { deg = -20; }
-
-      histData.addHist("faceDeg", deg, 15);
-      faceBone.rotation = histData.getHistAve("faceDeg");
 
       // message.textContent = "認識されてます"
     } else {
