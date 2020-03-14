@@ -12,7 +12,7 @@ $(async function() {
   });
 
   app.stop();
-  app.loader.add('fooko', '/resource/fooko.json')
+  app.loader.add('fooko', 'resource/fooko.json')
   .load(onAssetsLoaded);
 
   // Webカメラ初期化
