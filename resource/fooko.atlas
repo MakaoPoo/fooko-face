@@ -1,0 +1,118 @@
+
+fooko.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+back-hair
+  rotate: false
+  xy: 10, 10
+  size: 379, 484
+  orig: 379, 484
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 409, 373
+  size: 342, 246
+  orig: 342, 246
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 409, 10
+  size: 309, 343
+  orig: 309, 343
+  offset: 0, 0
+  index: -1
+left-eye-back
+  rotate: false
+  xy: 220, 718
+  size: 91, 89
+  orig: 91, 89
+  offset: 0, 0
+  index: -1
+right-eye-back
+  rotate: false
+  xy: 346, 639
+  size: 91, 89
+  orig: 91, 89
+  offset: 0, 0
+  index: -1
+left-eye-pupil
+  rotate: false
+  xy: 346, 514
+  size: 42, 77
+  orig: 42, 77
+  offset: 0, 0
+  index: -1
+right-eye-pupil
+  rotate: false
+  xy: 145, 815
+  size: 41, 77
+  orig: 41, 77
+  offset: 0, 0
+  index: -1
+left-eye-line
+  rotate: false
+  xy: 220, 514
+  size: 106, 82
+  orig: 106, 82
+  offset: 0, 0
+  index: -1
+right-eye-line
+  rotate: false
+  xy: 220, 616
+  size: 106, 82
+  orig: 106, 82
+  offset: 0, 0
+  index: -1
+left-hair
+  rotate: false
+  xy: 145, 514
+  size: 55, 281
+  orig: 55, 281
+  offset: 0, 0
+  index: -1
+right-hair
+  rotate: false
+  xy: 10, 514
+  size: 115, 354
+  orig: 115, 354
+  offset: 0, 0
+  index: -1
+center-hair
+  rotate: false
+  xy: 738, 10
+  size: 164, 254
+  orig: 164, 254
+  offset: 0, 0
+  index: -1
+left-brow
+  rotate: false
+  xy: 457, 639
+  size: 102, 30
+  orig: 102, 30
+  offset: 0, 0
+  index: -1
+right-brow
+  rotate: false
+  xy: 738, 284
+  size: 102, 30
+  orig: 102, 30
+  offset: 0, 0
+  index: -1
+mouth-open
+  rotate: false
+  xy: 10, 888
+  size: 33, 25
+  orig: 33, 25
+  offset: 0, 0
+  index: -1
+mouth-close
+  rotate: false
+  xy: 346, 611
+  size: 33, 4
+  orig: 33, 4
+  offset: 0, 0
+  index: -1
