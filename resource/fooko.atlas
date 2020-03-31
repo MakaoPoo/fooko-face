@@ -6,113 +6,113 @@ filter: Linear,Linear
 repeat: none
 back-hair
   rotate: false
-  xy: 10, 10
+  xy: 1, 1
   size: 379, 484
   orig: 379, 484
   offset: 0, 0
   index: -1
 body
   rotate: false
-  xy: 409, 373
+  xy: 382, 346
   size: 342, 246
   orig: 342, 246
   offset: 0, 0
   index: -1
 face
   rotate: false
-  xy: 409, 10
+  xy: 382, 1
   size: 309, 343
   orig: 309, 343
   offset: 0, 0
   index: -1
+mouth-close
+  rotate: false
+  xy: 569, 621
+  size: 33, 4
+  orig: 33, 4
+  offset: 0, 0
+  index: -1
+mouth-open
+  rotate: false
+  xy: 569, 594
+  size: 33, 25
+  orig: 33, 25
+  offset: 0, 0
+  index: -1
 left-eye-back
   rotate: false
-  xy: 220, 718
+  xy: 175, 571
   size: 91, 89
   orig: 91, 89
   offset: 0, 0
   index: -1
 right-eye-back
   rotate: false
-  xy: 346, 639
+  xy: 268, 571
   size: 91, 89
   orig: 91, 89
   offset: 0, 0
   index: -1
 left-eye-pupil
   rotate: false
-  xy: 346, 514
+  xy: 283, 487
   size: 42, 77
   orig: 42, 77
   offset: 0, 0
   index: -1
 right-eye-pupil
   rotate: false
-  xy: 145, 815
+  xy: 327, 487
   size: 41, 77
   orig: 41, 77
   offset: 0, 0
   index: -1
 left-eye-line
   rotate: false
-  xy: 220, 514
+  xy: 175, 487
   size: 106, 82
   orig: 106, 82
   offset: 0, 0
   index: -1
 right-eye-line
   rotate: false
-  xy: 220, 616
+  xy: 693, 257
   size: 106, 82
   orig: 106, 82
   offset: 0, 0
   index: -1
 left-hair
   rotate: false
-  xy: 145, 514
+  xy: 118, 487
   size: 55, 281
   orig: 55, 281
   offset: 0, 0
   index: -1
 right-hair
   rotate: false
-  xy: 10, 514
+  xy: 1, 487
   size: 115, 354
   orig: 115, 354
   offset: 0, 0
   index: -1
 center-hair
   rotate: false
-  xy: 738, 10
+  xy: 693, 1
   size: 164, 254
   orig: 164, 254
   offset: 0, 0
   index: -1
 left-brow
   rotate: false
-  xy: 457, 639
+  xy: 361, 594
   size: 102, 30
   orig: 102, 30
   offset: 0, 0
   index: -1
 right-brow
   rotate: false
-  xy: 738, 284
+  xy: 465, 594
   size: 102, 30
   orig: 102, 30
-  offset: 0, 0
-  index: -1
-mouth-open
-  rotate: false
-  xy: 10, 888
-  size: 33, 25
-  orig: 33, 25
-  offset: 0, 0
-  index: -1
-mouth-close
-  rotate: false
-  xy: 346, 611
-  size: 33, 4
-  orig: 33, 4
   offset: 0, 0
   index: -1
